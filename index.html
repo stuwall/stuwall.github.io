@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>我的手机网站</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
+    .header h1 {
+      font-size: 20px;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .navbar a.right {
+      float: right;
+    }
+    .main {
+      margin-left: 160px; /* Same width as the sidebar + left position in px */
+      padding: 0px 10px;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+    
+    /* Use a media query to add a breakpoint at 600px */
+    @media screen and (max-width: 600px) {
+      
+      /* Hide the sidebar when the screen size is less than or equal to 600px */
+      .main {
+        margin-left: 0; 
+        padding: 10px; 
+      }
+
+      /* Stack the navbar links vertically instead of horizontally */
+      .navbar a {
+        float: none; 
+        width: 100%; 
+        text-align: left; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+      }
+
+      /* Reduce the font size of the header */
+      .header h1 {
+        font-size: 16px; 
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+      }
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>我的手机网站</h1>
+    <p>一个由我创建的响应式网站。</p>
+  </div>
+  <div class="navbar">
+    <a href="#">链接</a>
+    <a href="#">链接</a>
+    <a href="#">链接</a>
+    <a href="#" class="right">链接</a>
+  </div>
+  <div class="main">
+    <h2>主要内容</h2>
+    <p>这里是一些文本。</p>
+  </div>
+  <div class="footer">
+    <p>版权所有 © 2023 我的手机网站。</p>
+  </div>
+</body>
+</html>
