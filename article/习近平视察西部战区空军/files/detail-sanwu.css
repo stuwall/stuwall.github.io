@@ -1,0 +1,16 @@
+
+.main .main-left {
+    width: 1000px;
+    margin:0 auto;
+}
+
+.nextpage{ display: none;}
+.btn-audio{ display:none;}
+
+
+@media screen and (max-width: 767px) {
+   
+    .main .main-left{
+        width: 100%;
+    }  
+}
