@@ -1,0 +1,172 @@
+"use strict";
+
+/* 导航展开和收起 */
+var curTopH = $('.mob-top').height();
+function setMenuStatus() {
+  $('#menu').on('click', function () {
+    // $('#map').addClass('active')
+    $('#map').animate({
+      height: '100%'
+    }, 800, function () {
+      $('body').addClass('stopScroll');
+    });
+  });
+  $('#map .mob-map-close').on('click', function () {
+    // $('#map').removeClass('active')
+    $('#map').animate({
+      height: 0
+    }, 800);
+    $('body').removeClass('stopScroll');
+  });
+}
+function scroll() {
+  var url = window.location.href;
+  var selectorTop = $('.mob-top-nav').offset().top;
+  $(window).scroll(function () {
+    var _this = $(this);
+    // console.log(_this.scrollTop(), selectorTop);
+    if (_this.scrollTop() >= selectorTop) {
+      // 顶部消失
+      $('.mob-top-nav').addClass('fixed');
+      curTopH = $('.mob-top-nav').height();
+    } else {
+      // 顶部出现
+      $('.mob-top-nav').removeClass('fixed');
+      curTopH = $('.mob-top').height();
+    }
+  });
+}
+function xi() {
+  var xiSwiper = new Swiper('#xiScroll .swiper', {
+    autoplay: true,
+    speed: 1000,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '#xiScroll .swiper-pagination'
+    }
+  });
+}
+function headline() {
+  if ($.trim($('.headline').attr('data-fontcolor')) != '') {
+    $('.headline').find('h1').css({
+      color: $('.headline').attr('data-fontcolor')
+    });
+    $('.headline h1').find('a').css({
+      color: $('.headline').attr('data-fontcolor')
+    });
+    $('.headline p').find('a').css({
+      color: $('.headline').attr('data-fontcolor')
+    });
+    $('.headline').find('p').css({
+      color: $('.headline').attr('data-fontcolor')
+    });
+  }
+}
+function focus() {
+  var slideNum = parseInt($.trim($('.slideNum').html()));
+  var slideOriginNum = parseInt($('#focus').find('.swiper-slide').length);
+  if (slideNum < slideOriginNum && slideNum !== 0) {
+    $('#focus').find('.swiper-slide').each(function (index) {
+      if (index >= slideNum) {
+        $(this).remove();
+      }
+    });
+  }
+  $('#focus').find('.swiper-slide').each(function (index) {
+    var vUrl = $(this).attr('data-url');
+    if (vUrl != '') {
+      $(this).find('.img').find('a').removeAttr('href');
+      $(this).find('.img').find('.btn').removeClass('hide');
+    }
+  });
+  $('#focus').on('click', '.img', function () {
+    var vUrl = $(this).parents('.swiper-slide').attr('data-url');
+    console.log(vUrl);
+    if (vUrl != '') {
+      var videoDom = "<div class=\"media-box\" id=\"mediaBox\"><video autoplay controls playsinline=\"true\" preload=\"auto\"  x5-playsinline=\"true\" webkit-playsinline=\"true\" src=\"".concat(vUrl, "\" id=\"video1\"></video><div class=\"media-close\"></div></div>");
+      $('#focus .bg-white').append(videoDom);
+    }
+  });
+  $('#focus').on('click', '.media-close', function () {
+    $('#focus').find('#mediaBox').remove();
+  });
+  var focusSwiper = new Swiper('#focus .swiper', {
+    autoplay: true,
+    speed: 1000,
+    loop: true,
+    // autoHeight: true,
+    pagination: {
+      el: '#focus .swiper-pagination'
+    }
+  });
+}
+function showAllList() {
+  $('.more').on('click', function () {
+    $(this).addClass('hide');
+    $(this).siblings('.hide').removeClass('hide');
+  });
+}
+function products() {
+  $('#products').find('li').each(function (index) {
+    var vUrl = $(this).attr('data-url');
+    if (vUrl != '') {
+      $(this).find('.img').find('.btn').removeClass('hide');
+    }
+  });
+}
+function gallery() {
+  var gallerySwiper = new Swiper('#galleryScroll .swiper', {
+    autoplay: true,
+    speed: 1000,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+    loop: true
+    // pagination: {
+    //     el: '#galleryScroll .swiper-pagination',
+    // },
+  });
+}
+
+function talk() {
+  var talkSwiper = new Swiper('#talkScroll .swiper', {
+    autoplay: true,
+    speed: 1000,
+    // slidesPerView: 2,
+    // slidesPerGroup: 2,
+    // spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '#talkScroll .swiper-pagination'
+    }
+  });
+}
+function recommend() {
+  var recommendSwiper = new Swiper('#recommendScroll .swiper', {
+    autoplay: true,
+    speed: 1000,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+    loop: true
+    // pagination: {
+    //     el: '#recommendScroll .swiper-pagination',
+    // },
+  });
+}
+
+$(function () {
+  setMenuStatus();
+  scroll();
+  xi();
+  headline();
+  focus();
+  showAllList();
+  products();
+  gallery();
+  talk();
+  recommend();
+});
