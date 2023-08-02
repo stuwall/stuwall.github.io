@@ -3,17 +3,17 @@
 			src: url("../fonts/仓迹高德国妙黑.ttf");
 		}
 		.biaoti {
-	margin: 0;
-    padding: 10px 0 10px 10px;
-    height: 38px !important;
-	font-family: Title;
-    letter-spacing: 2px;
-	font-weight: normal;
-    background-clip: padding-box;
-    background-color: rgba(186, 28, 20, 1);
-	color: rgba(255, 255, 255, 1);
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-	user-select: none;
+			margin: 0;
+   			padding: 10px 0 10px 10px;
+  			height: 38px !important;
+			font-family: Title;
+   			letter-spacing: 2px;
+			font-weight: normal;
+		    background-clip: padding-box;
+		    background-color: rgba(186, 28, 20, 1);
+			color: rgba(255, 255, 255, 1);
+			text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+			user-select: none;
     	}
 
 		ul {
@@ -76,7 +76,6 @@
  		#news .con {
  			width: 90%;
  			margin: 0 auto;
-			ustify-content: center;
  		}
 
  		#news .con li {
@@ -156,6 +155,22 @@
  			color: #969696;			
  		}
 
+		#myBtn {
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			border: none;
+			outline: none;
+			background-color: rgba(186, 28, 20, 1) ;
+			color: white;
+			cursor: pointer;
+			padding: 12px 15px 12px 15px;
+			letter-spacing: 2px;
+			line-height: normal;
+			border-radius: 10px;
+		  }
+
 		 .foot{
 			width: 100% !important;
 			min-width: 100%;
@@ -166,4 +181,3 @@
 			text-align: center;
 			color: #fff;
 			background: rgba(186, 28, 20, 1)}
-			font-family: tahoma, arial, "Hiragino Sans GB","\5b8b\4f53", sans-serif;
