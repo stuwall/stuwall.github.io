@@ -1,0 +1,543 @@
+ @charset 'utf-8';
+
+ .clearfix:after,
+ body,
+ dd,
+ div,
+ dl,
+ dt,
+ form,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ hr,
+ html,
+ input,
+ label,
+ li,
+ ol,
+ p,
+ pre,
+ table,
+ tbody,
+ td,
+ textarea,
+ tfoot,
+ th,
+ thead,
+ tr,
+ ul {
+ 	margin: 0;
+ 	padding: 0
+ }
+
+ body,
+ html {
+ 	height: 100%
+ }
+
+ body {
+ 	margin: 0;
+ 	font-family: tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+ 	font-size: 14px;
+ 	line-height: 1.4286;
+ }
+
+ li {
+ 	list-style-type: none
+ }
+
+ a {
+ 	text-decoration: none;
+ 	outline: 0;
+ 	color: #333
+ }
+
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0
+ }
+
+ iframe,
+ img {
+ 	border: 0
+ }
+
+ img {
+ 	vertical-align: top
+ }
+
+ .clearfix {
+ 	display: block
+ }
+
+ .clearfix:after {
+ 	content: '';
+ 	overflow: hidden;
+ 	width: 100%;
+ 	height: 0;
+ 	font-size: 0;
+ 	display: block;
+ 	clear: both
+ }
+
+ i {
+ 	font-style: normal
+ }
+
+ body {
+ 	background: #f5f5f5;
+ 	height: auto;
+ 	max-width: 2048px;
+ 	margin: 0 auto
+ }
+
+ body.stopScroll {
+ 	height: 100%;
+ 	overflow: hidden
+ }
+
+ .part {
+ 	position: relative;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	padding: 0 .222222rem;
+ 	width: 100%
+ }
+
+ .bg-white {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	padding: .266667rem;
+ 	width: 100%;
+ 	-webkit-border-radius: .213333rem;
+ 	-moz-border-radius: .213333rem;
+ 	border-radius: .213333rem;
+ 	background: #fff
+ }
+
+ .hide {
+ 	display: none
+ }
+
+ .list .more {
+ 	text-align: center;
+ 	font-size: .373333rem;
+ 	color: 007aff;
+ 	line-height: .551111rem;
+ 	padding: .266667rem 0
+ }
+
+ .list.list-txt li {
+ 	position: relative;
+ 	width: 100%;
+ 	display: table;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	padding: .266667rem .133333rem;
+ 	min-height: 1.742222rem
+ }
+
+ .list.list-txt li:last-child {
+ 	border-bottom: 0
+ }
+
+ .list.list-txt li span {
+ 	display: table-cell;
+ 	vertical-align: middle
+ }
+
+ .list.list-txt li a {
+ 	font-size: .462222rem;
+ 	line-height: .64rem;
+ 	color: #333
+ }
+
+ .list.list-pic ul {
+ 	font-size: 0
+ }
+
+ .list.list-pic li {
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	position: relative;
+ 	width: 49%
+ }
+
+ .list.list-pic li:nth-child(odd) {
+ 	margin-right: 2%
+ }
+
+ .list.list-pic li .img {
+ 	position: relative;
+ 	z-index: 1;
+ 	width: 100%;
+ 	height: auto
+ }
+
+ .list.list-pic li .img img {
+ 	width: 100%;
+ 	height: auto
+ }
+
+ .list.list-pic li .tit {
+ 	font-size: .462222rem;
+ 	line-height: .64rem;
+ 	color: #333
+ }
+
+ .list.list-pic li .tit a {
+ 	color: #333
+ }
+
+ .list.list-mix li {
+ 	display: -webkit-box;
+ 	display: -webkit-flex;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-pack: justify;
+ 	-webkit-justify-content: space-between;
+ 	-moz-box-pack: justify;
+ 	-ms-flex-pack: justify;
+ 	justify-content: space-between
+ }
+
+ .list.list-mix li .img {
+ 	position: relative;
+ 	width: 4rem;
+ 	height: 2.311111rem;
+ 	margin-right: .266667rem;
+ 	overflow: hidden
+ }
+
+ .list.list-mix li .img img {
+ 	position: relative;
+ 	z-index: 1;
+ 	width: 100%;
+ 	height: 100%
+ }
+
+ .list.list-mix li .tit {
+ 	-webkit-box-flex: 1;
+ 	-webkit-flex: 1;
+ 	-moz-box-flex: 1;
+ 	-ms-flex: 1;
+ 	flex: 1;
+ 	display: -webkit-box;
+ 	display: -webkit-flex;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-align: center;
+ 	-webkit-align-items: center;
+ 	-moz-box-align: center;
+ 	-ms-flex-align: center;
+ 	align-items: center;
+ 	font-size: .462222rem;
+ 	line-height: .64rem;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	color: #333
+ }
+
+ .list.list-mix li .tit a {
+ 	color: #333
+ }
+
+ .title .name {
+ 	padding-top: .266667rem;
+ 	padding-bottom: .266667rem;
+ 	padding-left: .888889rem;
+ 	font-size: .533333rem;
+ 	line-height: .8rem;
+ 	color: #024ac2
+ }
+
+ .title .name a {
+ 	color: #024ac2
+ }
+
+ .title .sub {
+ 	display: none
+ }
+
+ .headline {
+ 	margin-top: .213333rem
+ }
+
+ .headline .bg-white {
+ 	display: -webkit-box;
+ 	display: -webkit-flex;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-align: center;
+ 	-webkit-align-items: center;
+ 	-moz-box-align: center;
+ 	-ms-flex-align: center;
+ 	align-items: center;
+ 	-webkit-box-pack: justify;
+ 	-webkit-justify-content: space-between;
+ 	-moz-box-pack: justify;
+ 	-ms-flex-pack: justify;
+ 	justify-content: space-between;
+ 	-webkit-flex-flow: wrap;
+ 	-ms-flex-flow: wrap;
+ 	flex-flow: wrap
+ }
+
+ .headline .title {
+ 	display: -webkit-box;
+ 	display: -webkit-flex;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-align: end;
+ 	-webkit-align-items: flex-end;
+ 	-moz-box-align: end;
+ 	-ms-flex-align: end;
+ 	align-items: flex-end;
+ 	height: 1.333333rem;
+ 	margin-right: .222222rem;
+ 	font-size: .426667rem;
+ 	color: #024ac2;
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-headline.png) center .088889rem no-repeat;
+ 	-webkit-background-size: auto 45%;
+ 	-moz-background-size: auto 45%;
+ 	background-size: auto 45%;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box
+ }
+
+ .headline h1 {
+ 	position: relative;
+ 	-webkit-box-flex: 1;
+ 	-webkit-flex: 1;
+ 	-moz-box-flex: 1;
+ 	-ms-flex: 1;
+ 	flex: 1;
+ 	padding-left: .222222rem;
+ 	font-size: 0.4rem;
+	font-family: "微软雅黑","Droid Sans Fallback";
+ 	line-height: .711111rem;
+ 	font-weight: 700;
+ 	color: #024ac2
+ }
+
+ .headline h1 a {
+ 	color: #024ac2
+ }
+
+ .headline h1:before {
+ 	content: '';
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	display: block;
+ 	width: .035556rem;
+ 	height: 100%;
+ 	background: #333;
+ 	opacity: .1
+ }
+
+ .headline p {
+ 	width: 100%;
+ 	font-size: .373333rem;
+ 	line-height: .497778rem;
+ 	color: #666;
+ 	margin-top: .266667rem
+ }
+
+ .headline p a {
+ 	color: #666
+ }
+
+ .leadNews {
+ 	margin-top: .213333rem
+ }
+
+ .leadNews .list .more {
+ 	padding-top: 0
+ }
+
+ .leadNews .list.list-txt li {
+ 	margin-bottom: .213333rem;
+ 	padding-left: .266667rem;
+ 	padding-right: .266667rem
+ }
+
+ .freezone {
+ 	margin-top: .213333rem
+ }
+
+ .freezone .list.list-mix {
+ 	padding-bottom: .266667rem
+ }
+
+ .freezone .list.list-txt li {
+ 	border-top: 2px dashed #999
+ }
+
+ .freezone .card {
+ 	margin-bottom: .213333rem
+ }
+
+ .freezone .card-txt .bg-white {
+ 	padding-top: 0;
+ 	padding-bottom: 0
+ }
+
+ .freezone .card-txt .list.list-txt li:first-child {
+ 	border-top: 0
+ }
+
+ .freezone .card-txt .list.list-txt li:last-child {
+ 	border-bottom: 0
+ }
+
+ .freezone .card-mix .list.list-txt li:last-child {
+ 	border-bottom: 0
+ }
+
+ .freezone .card-rs .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-rs.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-jy .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-jy.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-kj .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-kj.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-jr .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-jr.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .64rem .64rem;
+ 	-moz-background-size: .64rem;
+ 	background-size: .64rem
+ }
+
+ .freezone .card-qc .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-qc.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-kp .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-kp.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-sp .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-sp.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .711111rem .711111rem;
+ 	-moz-background-size: .711111rem;
+ 	background-size: .711111rem
+ }
+
+ .freezone .card-jk .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-jk.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-xczx .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-xczx.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-xxh .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-xxh.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .64rem .64rem;
+ 	-moz-background-size: .64rem;
+ 	background-size: .64rem
+ }
+
+ .freezone .card-rj .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-rj.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-syzg .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-syzg.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-ny .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-ny.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .657778rem .657778rem;
+ 	-moz-background-size: .657778rem;
+ 	background-size: .657778rem
+ }
+
+ .freezone .card-csly .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-csly.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .64rem .64rem;
+ 	-moz-background-size: .64rem;
+ 	background-size: .64rem
+ }
+
+ .freezone .card-ssgs .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-ssgs.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-wh .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-wh.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .56rem .56rem;
+ 	-moz-background-size: .56rem;
+ 	background-size: .56rem
+ }
+
+ .freezone .card-ss .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-ss.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .64rem .64rem;
+ 	-moz-background-size: .64rem;
+ 	background-size: .64rem
+ }
+
+ .freezone .card-ty .name {
+ 	background: url(http://www.news.cn/2023homepro/mobile/images/icon-ty.png) .133333rem center no-repeat;
+ 	-webkit-background-size: .64rem .64rem;
+ 	-moz-background-size: .64rem;
+ 	background-size: .64rem
+ }
+
+ .floatRed .headline .title {
+ 	color: #d11305;
+ 	background-image: url(http://www.news.cn/2023homepro/mobile/images/icon-headlineRed.png)
+ }

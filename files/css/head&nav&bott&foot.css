@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Title;
+    src: url(../fonts/仓迹高德国妙黑.ttf);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+    font-size: 14px;
+    line-height: 1.4286;
+}
+
+.biaoti {
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    height: 38px !important;
+    font-family: Title;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    font-weight: normal;
+    background-clip: padding-box;
+    background-color: #024ac2;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navdiv .nav {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 44px;
+    background: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 2%;
+    font-size: 13px;
+}
+
+#navdiv .nav a {
+    display: block;
+    color: #969696;
+}
+
+#navdiv .nav .active a {
+    color: #024ac2;
+    font-weight: bold;
+    list-style: none;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #024ac2;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px 12px 15px;
+    letter-spacing: 2px;
+    line-height: normal;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.288);
+}
+
+.foot {
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background: #024ac2;
+}
