@@ -84,10 +84,14 @@ a {
 .foot {
     margin-top: 12%;
     position: relative;bottom:0;
-    text-align: center;
     padding: 5% 0;
-    font-size: 12px;
-    line-height: 280%;
     color: #fff;
     background: #024ac2;
 }
+.foot p{
+    text-align: center;
+    font-size: 10px;
+    line-height: 200%;
+    letter-spacing: 0.05rem;
+    margin-left: 5%;
+    margin-right: 5%;}
