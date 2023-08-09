@@ -54,12 +54,12 @@
 	<div id="navdiv">
 		<!--标签分类-->
 		<ul class="nav">
-			<li class="active"><a href="./index.html">精选推荐</a></li>
-			<li><a href="./Tags/TagA.html">小说故事</a></li>
-			<li><a href="./Tags/TagB.html">书城</a></li>
-			<li><a href="./Tags/TagC.html"></a></li>
+			<li class="active"><a href="./index.html">精选</a></li>
+			<li><a href="./Tags/TagA.html">圈子</a></li>
+			<li><a href="./Tags/TagB.html">学习</a></li>
+			<li><a href="./Tags/TagD.html">书屋</a></li>
 			<li><a href="./Tags/TagE.html">联系我们</a></li>
-		</ul>
+		</u>
 	</div>
 	<!--返回顶部-->
 	<div>
@@ -72,23 +72,11 @@
 	<div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 		<div class="swiper-wrapper" id="swiper-wrapper-196dd0fe981345f4" aria-live="polite">
 			<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9" _mstaria-label="16016"
-				_msthash="1" _msttexthash="8623654" style="width: 414px;"><img src="./图文件/1.jpg"/></div>
+				_msthash="1" _msttexthash="8623654" style="width: 414px;"><img src="./图文件/1.jpg" /></div>
 			<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9" _mstaria-label="16107"
-				_msthash="2" _msttexthash="8623784" style="width: 414px;"><img src="./图文件/2.jpg"/></div>
+				_msthash="2" _msttexthash="8623784" style="width: 414px;"><img src="./图文件/2.jpg" /></div>
 			<div class="swiper-slide" role="group" aria-label="3 / 9" _mstaria-label="16198" _msthash="3"
-				_msttexthash="8623914" style="width: 414px;"><img src="./图文件/3.jpg"/></div>
-			<div class="swiper-slide" role="group" aria-label="4 / 9" _mstaria-label="16289" _msthash="4"
-				_msttexthash="8624044" style="width: 414px;">幻灯片 4</div>
-			<div class="swiper-slide" role="group" aria-label="5 / 9" _mstaria-label="16380" _msthash="5"
-				_msttexthash="8624174" style="width: 414px;">幻灯片 5</div>
-			<div class="swiper-slide" role="group" aria-label="6 / 9" _mstaria-label="16471" _msthash="6"
-				_msttexthash="8624304" style="width: 414px;">幻灯片 6</div>
-			<div class="swiper-slide" role="group" aria-label="7 / 9" _mstaria-label="16562" _msthash="7"
-				_msttexthash="8624434" style="width: 414px;">幻灯片 7</div>
-			<div class="swiper-slide" role="group" aria-label="8 / 9" _mstaria-label="16653" _msthash="8"
-				_msttexthash="8624564" style="width: 414px;">幻灯片 8</div>
-			<div class="swiper-slide" role="group" aria-label="9 / 9" _mstaria-label="16744" _msthash="9"
-				_msttexthash="8624694" style="width: 414px;">幻灯片 9</div>
+				_msttexthash="8623914" style="width: 414px;"><img src="./图文件/3.jpg" /></div>
 		</div>
 		<div class="swiper-button-next" tabindex="0" role="button" aria-label="下一张幻灯片"
 			aria-controls="swiper-wrapper-196dd0fe981345f4" aria-disabled="false" _mstaria-label="135655" _msthash="10">
@@ -108,13 +96,9 @@
 			<div class="bg-white">
 				<div class="title">头条</div>
 				<h1><a href="http://www.news.cn/politics/2023-08/02/c_1129783198.htm"
-						target="_blank">扎实推动经济高质量发展——以习近平同志为核心的党中央今年以来引领中国经济持续恢复、稳中求进述评</a></h1>
+						target="_blank">淄博校友网淄博校友网淄博校友网</a></h1>
 				<p><a href="http://www.news.cn/politics/2023-08/02/c_1129783198.htm"
-						target="_blank">以习近平同志为核心的党中央团结带领全党全国各族人民，推动经济持续恢复、总体回升向好</a>　<a
-						href="http://www.news.cn/politics/2023-08/02/c_1129783198.htm" target="_blank">努力实现良好开局</a>　<a
-						href="http://www.news.cn/politics/2023-08/02/c_1129783198.htm" target="_blank">推动经济转型升级</a>　<a
-						href="http://www.news.cn/politics/2023-08/02/c_1129783198.htm" target="_blank">始终坚守人民情怀</a>　<a
-						href="http://www.news.cn/politics/2023-08/02/c_1129783198.htm" target="_blank">打开发展新天地</a>
+						target="_blank">以习近平同志为核心的党中央团结带领全党全国各族人民，推动经济持续恢复、总体回升向好</a>
 				</p>
 			</div>
 		</div>
@@ -202,6 +186,10 @@
 
 	<script>
 		var swiper = new Swiper(".mySwiper", {
+			loop: true,
+			autoplay: {
+				delay: 2500,//2.5秒切换一次
+			},
 			pagination: {
 				el: ".swiper-pagination",
 				type: "fraction",
