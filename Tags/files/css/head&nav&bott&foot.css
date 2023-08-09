@@ -15,7 +15,7 @@ body {
     line-height: 1.4286;
 }
 
-#biaoti h1{
+.biaoti {
     margin: 0;
     padding: 10px 0 10px 10px;
     height: 38px !important;
@@ -82,18 +82,16 @@ a {
 }
 
 .foot {
-    margin-top: 12%;
+    margin-top: 20%;
     position: static;
     padding: 5% 0;
     color: #fff;
     background: #024ac2;
 }
-
-.foot p {
+.foot p{
     text-align: center;
     font-size: 10px;
     line-height: 200%;
     letter-spacing: 0.05rem;
     margin-left: 5%;
-    margin-right: 5%;
-}
+    margin-right: 5%;}
