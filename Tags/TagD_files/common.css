@@ -52,7 +52,7 @@ body{
 	color: #333;
 	font-size: 0.75rem;
 	background: #fff;
-	font-family: 'microsoft yahei','微软雅黑','abchanel-couture','华文细黑','STXHei','华文黑体','ST Heiti','MS黑体','MSHei','Arial','Helvetica','sans-serif';
+    font-family: tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
     /*max-width:7.5rem;*/
 }
 
